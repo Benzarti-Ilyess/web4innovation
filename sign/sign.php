@@ -1,5 +1,13 @@
 <?php
-session_start();
+  session_start();
+  if (isset($_SESSION['signed-in'])){
+    header('location: home.php');
+  }
+ ?>
+
+
+<?php
+
 
 $db = mysqli_connect('35.160.127.179','butterflies','butter2017','butterflies');
 $result = $db->query("select nom,pass from utilisateur");
@@ -14,7 +22,7 @@ if(isset($_POST['submit'])){
   if ($_POST['username']==$a && $_POST['password']==$b){
     $_SESSION['username']=$_POST['username'];
     $_SESSION['signed-in']=true;
-    header('location: ./home.php');
+    header('location: ./compte.php');
     return 0;
   }else{
     header('location:sign.php?error');

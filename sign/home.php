@@ -26,7 +26,7 @@
 		<!-- Header -->
 			<header id="header">
 				<div class="inner">
-			<a href="#" class="logo">  <strong>Bienvenue,<?= $_SESSION['username']?></strong></a>
+			<a href="compte.php" class="logo">  <strong>Bienvenue, <?= $_SESSION['username']?></strong></a>
 					<a href="./signout.php">Sign-out</a>
 					<nav id="nav">
 						<a href="./index.html">Home</a>
