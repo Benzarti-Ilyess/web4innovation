@@ -18,8 +18,7 @@
 			<a href="#" class="logo">  <strong>Bienvenue Dans l'espace des artisants Tunisien(ne)s</strong></a>
 				<nav id="nav">
 					<a href="./index.php">Acceuil</a>
-					<a href="generic.php">Generic</a>
-					<a href="elements.php">Elements</a>
+					<a href="sign/sign-in.php">Se connecter</a>
 				</nav>
 				<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 			</div>

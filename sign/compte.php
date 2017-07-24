@@ -5,6 +5,8 @@
   }else{
     include('../config.php');
   }
+  $client=$_SESSION['email'];
+  
  ?>
 <html>
 	<head>
@@ -28,7 +30,7 @@
 		</header>
     <br><br><br><br><br><center><h2>Votre Boutique</h2></center><br><br><br><br>
     <?php
-      $query = "SELECT * FROM product WHERE email = 'aa'";
+      $query = "SELECT * FROM product WHERE email = '$client'";
       $result = mysqli_query($db, $query);
       while ($row = $result->fetch_array())
       {
