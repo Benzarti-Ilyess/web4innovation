@@ -1,3 +1,13 @@
+<?php
+  session_start();
+  if (isset($_SESSION['signed-in'])){
+    header('location: sign/home.php');
+  }
+ ?>
+
+
+
+
 <!DOCTYPE HTML>
 <!--
 	Projection by TEMPLATED
@@ -6,7 +16,7 @@
 -->
 <html>
 	<head>
-		<title>Projection by TEMPLATED</title>
+		<title>Site web pour la commerce des artisanats</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -17,9 +27,10 @@
 		<!-- Header -->
 			<header id="header">
 				<div class="inner">
-					<a href="index.html" class="logo"><strong>Projection</strong> by TEMPLATED</a>
+			<a href="#" class="logo">  <strong>Site web pour la commerce des artisanats</strong></a>
+
 					<nav id="nav">
-						<a href="index.html">Home</a>
+						<a href="./index.html">Home</a>
 						<a href="generic.html">Generic</a>
 						<a href="elements.html">Elements</a>
 					</nav>
@@ -59,7 +70,9 @@
 					<footer>
 						<a href="#" class="button">Je veux vendre</a>
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<a href="#" class="button">Je veux acheter</a>
+						<a href="./achat/achat.php" class="button">Je veux acheter</a>
+						<br><br>
+						<a href="./sign/sign.php" class="button">Sign in</a>
 					</footer>
 				</div>
 			</section>
