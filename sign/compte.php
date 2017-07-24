@@ -1,13 +1,19 @@
 <?php
+include('../config.php');
   session_start();
   if (!isset($_SESSION['signed-in'])){
     header('location: sign-in.php');
-  }else{
-    include('../config.php');
-  }
+}
   $client=$_SESSION['email'];
-
  ?>
+
+ <?php
+ if(isset($_POST['submit'])){
+   $id = $_GET['id'];
+   $query = "DELETE FROM product WHERE id =$id ";
+   $result = mysqli_query($db, $query);
+}
+  ?>
 <html>
 	<head>
 		<title>Carthage Bay | Ma Boutique</title>
@@ -22,8 +28,7 @@
 				<a href="./compte.php" class="logo"><strong>Bienvenue, <?= $_SESSION['name']?></strong> </a>
 				<nav id="nav">
 					<a href="./../index.php">Home</a>
-					<a href="generic.html">Generic</a>
-					<a href="elements.html">Elements</a>
+          <a href="./sign-out.php">Se déconnecter</a>
 				</nav>
 				<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 			</div>
@@ -39,13 +44,19 @@
       <div class="col-md-3"></div>
       <div class="col-md-6" style="background:#f5f5f5;">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-4">
             <img src="./../items/<?php echo $row['image'];?>" width="180px" height="130px">
           </div>
-          <div class="col-md-6">
+          <div class="col-md-4">
             <h4>  <?php echo $row['titre']; ?> </h4><br>
             <h5>  <?php echo $row['prix']; ?> DT<br></h5>
             <?php echo $row['region']; ?>
+          </div>
+          <div class="col-md-2">
+            <br><br>
+            <form action="compte.php?id=<?=$row['id']?>" method="post">
+              <button name="submit" type="submit">effacer</button>
+            </form>
           </div>
         </div>
       </div>

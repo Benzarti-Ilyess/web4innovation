@@ -33,11 +33,10 @@ if(isset($_POST['submit'])){
 	<body class="subpage">
 		<header id="header">
 			<div class="inner">
-				<a href="index.html" class="logo"><strong>Carthage Bay</strong></a>
+				<a href="./../index.php" class="logo"><strong>Carthage Bay</strong></a>
 				<nav id="nav">
 					<a href="./../index.php">Home</a>
-					<a href="generic.html">Generic</a>
-					<a href="elements.html">Elements</a>
+					<a href="sign-in.php">Se Connecter</a>
 				</nav>
 				<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 			</div>
