@@ -22,6 +22,12 @@
     while ($row = $result->fetch_array())
     {
     ?>
+    <?php
+
+    $res=$db->query("SELECT tel from users where email='{$row['email']}'");
+    $rowe = $res->fetch_array();
+
+    ?>
     <div class="abc">
 
     <div class="row">
@@ -30,6 +36,7 @@
       </div>
       <div class="col-md-5 ">
       <h4>  <?php echo $row['titre']; ?> </h4><br>
+      <?=$rowe['tel'];?>
       <h5>  <?php echo $row['prix']; ?> DT<br></h5>
             <?php echo $row['region']; ?>
       </div>

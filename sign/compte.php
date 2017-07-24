@@ -5,8 +5,6 @@ include('../config.php');
     header('location: sign-in.php');
 }
   $client=$_SESSION['email'];
-
-
  ?>
 
  <?php
@@ -29,8 +27,7 @@ include('../config.php');
 				<a href="./compte.php" class="logo"><strong>Bienvenue, <?= $_SESSION['name']?></strong> </a>
 				<nav id="nav">
 					<a href="./../index.php">Home</a>
-					<a href="generic.html">Generic</a>
-					<a href="elements.html">Elements</a>
+          <a href="./sign-out.php">Se déconnecter</a>
 				</nav>
 				<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 			</div>

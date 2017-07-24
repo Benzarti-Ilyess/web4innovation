@@ -17,10 +17,9 @@
 		<header id="header">
 			<div class="inner">
     		<a href="compte.php" class="logo">  <strong>Bienvenue, <?= $_SESSION['name']?></strong></a>
-    		<a href="./sign-out.php">Déconnecter</a>
 			  <nav id="nav">
-					<a href="./index.html">Home</a>
-					<a href="generic.html">Se deconnecter</a>
+					<a href="home.php">Home</a>
+					<a href="./sign-out.php">Se deconnecter</a>
 				</nav>
 				<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 			</div>
@@ -33,7 +32,7 @@
 				<div class="flex ">
 					<div>
 						<img class="animation animated bounce" src="./../images/jebba.jpg" width="150px" height="150px" />
-						<h3>Vêtements/h3>
+						<h3>Vêtements</h3>
               <p class="description">Découvrez les habits traditionels des régions Tunisiennes</p>
 					</div>
 					<div>
@@ -48,7 +47,7 @@
 					</div>
 				</div>
 				<footer>
-					<a href="../items/items.html" class="button">Je veux vendre</a>
+					<a href="../items/items.php" class="button">Je veux vendre</a>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					<a href="./../achat/achat.php" class="button">Je veux acheter</a>
 					<br><br>
