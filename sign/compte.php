@@ -9,7 +9,8 @@ include('../config.php');
 
  <?php
  if(isset($_POST['submit'])){
-   $query = "DELETE FROM product WHERE id =6 ";
+   $id = $_GET['id'];
+   $query = "DELETE FROM product WHERE id =$id ";
    $result = mysqli_query($db, $query);
 }
   ?>
@@ -53,7 +54,7 @@ include('../config.php');
           </div>
           <div class="col-md-2">
             <br><br>
-            <form action="compte.php" method="post">
+            <form action="compte.php?id=<?=$row['id']?>" method="post">
               <button name="submit" type="submit">effacer</button>
             </form>
           </div>

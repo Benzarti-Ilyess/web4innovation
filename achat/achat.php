@@ -22,8 +22,6 @@
 				 <strong class="logo">Site web pour la commerce des artisanats</strong>
 					<nav id="nav">
 						<a href="./../index.php">Home</a>
-						<a href="generic.html">Generic</a>
-						<a href="elements.html">Elements</a>
 					</nav>
 					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 				</div>
