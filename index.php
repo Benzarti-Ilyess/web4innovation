@@ -51,7 +51,7 @@
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					<a href="./achat/achat.php" class="button">Je veux acheter</a>
 					<br><br>
-					<a href="./sign/sign.php" class="button">Sign in</a>
+					<a href="./sign/sign-in.php" class="button">Sign in</a>
 				</footer>
 			</div>
 		</section>
