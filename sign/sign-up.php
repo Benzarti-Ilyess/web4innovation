@@ -20,9 +20,9 @@
       header('location: ./home.php');
 
     }else{
-      echo '<p>Sign up unsuccessful<br>'
-            . 'ERROR_WHILE_INSERTING_TO_DATABASE</p><br>'
-            . "<a href=\"sign-up.php\">Retry</a><br><br>";
+      echo '<br><br><br><br><br><center><h3><font color="red">Probleme avec la création de compte<br>'
+            . 'Le mail que vous avez saisi existe deja<br></h3></font>'
+            . "<a href=\"sign-up.php\">Retourner à la page précedente</a><br><br>";
     }
   }
 
@@ -36,15 +36,18 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="./../assets/css/main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
+		<script src="sign.js">
+
+		</script>
+
 	</head>
 	<body class="subpage">
 		<header id="header">
 			<div class="inner">
-				<a href="index.html" class="logo"><strong>Carthage Bay</strong></a>
+				<a href="../index.php" class="logo"><strong>Carthage Bay</strong></a>
 				<nav id="nav">
 					<a href="./../index.php">Home</a>
-					<a href="generic.html">Generic</a>
-					<a href="elements.html">Elements</a>
+					<a href="sign-in.php">Se Connecter</a>
 				</nav>
 				<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 			</div>
@@ -53,7 +56,7 @@
 	  <div class="col-md-4"></div>
 	  <div class="col-md-4">
 			<center>
-	    	<form  action="sign-up.php" method="post">
+	    	<form  action="sign-up.php" method="post" name="formulaire" >
 	      	<br><br><br><br><br>
 					<center>
 						<h2>Créer nouveau compte</h2>
@@ -68,7 +71,7 @@
 						</div>
 		    	</div>
 		    	<br><br>
-		    	<input type="text" name="email" placeholder="Adresse e-mail" />
+		    	<input type="text" name="email" id=email placeholder="Adresse e-mail" />
 		    	<br><br>
 					<input type="text" name="phone" placeholder="Numero de telephone" />
 		    	<br><br>
