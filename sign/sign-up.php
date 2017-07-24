@@ -27,11 +27,10 @@
   }
 
 ?>
-
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Carthage-Bay | Sign-up</title>
+		<title>Carthage-Bay | Réjoigner nous</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -41,7 +40,7 @@
 	<body class="subpage">
 		<header id="header">
 			<div class="inner">
-				<a href="index.html" class="logo"><strong>Projection</strong> by TEMPLATED</a>
+				<a href="index.html" class="logo"><strong>Carthage Bay</strong></a>
 				<nav id="nav">
 					<a href="./../index.php">Home</a>
 					<a href="generic.html">Generic</a>
@@ -73,7 +72,7 @@
 		    	<br><br>
 					<input type="text" name="phone" placeholder="Numero de telephone" />
 		    	<br><br>
-		    	<input type="password" name="password" placeholder="Nouveau mot de passe" />
+		    	<input type="password" name="password" placeholder="Mot de passe" />
 		    	<br><br>
 					<input type="radio" id="demo-priority-low" name="sex" value="man" checked>
 			    <label for="demo-priority-low">Homme</label>
