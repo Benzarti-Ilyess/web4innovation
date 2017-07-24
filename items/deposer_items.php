@@ -1,34 +1,34 @@
 <?php
+
 if(isset($_POST['submit']))
   {
-$tmp_name=$_FILES['image']['tmp_name'];
-$filename=time().".jpg";
-    $categ=$_POST["categ"];
+
+$tmp_name1=$_FILES['img1']['tmp_name'];
+$tmp_name2=$_FILES['img2']['tmp_name'];
+$filename1=time().".jpg";
     $prix=$_POST["prix"];
-    $reg=$_POST["reg"];
+    $reg=$_POST["Régions"];
     $titre=$_POST["titre"];
-    $nom=$_POST["nom"];
-    $email=$_POST["email"];
-    $tel=$_POST["tel"];
-    $passe=$_POST["passe"];
     $desc=$_POST["desc"];
-
-    move_uploaded_file($tmp_name,$filename);
-
+    $quantite=$_POST["qte"];
+$filename2=time()."1.jpg";
+    move_uploaded_file($tmp_name1,$filename1);
+    move_uploaded_file($tmp_name2,$filename2);
     $db = mysqli_connect('35.160.127.179','butterflies','butter2017','butterflies');
     //mysqli_connect server username password database
     if($db)
     {
     //$result = mysqli_query($db,$sql);
     //foreach ($result as $personne) {
-    //  $personne->name;
-    //}
-    mysqli_query($db,"INSERT INTO annonces (titre,prix,nom_prenom,email,tel,passe,categorie,region,description,image) VALUES ('$titre','$prix','$nom','$email','$tel','$passe','$categ','$reg','$desc','$filename')");
+    //  $personne->name;  //}
+    mysqli_query($db,"INSERT INTO product VALUES (NULL,'aa','$titre','$reg','monastir','$quantite','$prix','$filename1','$desc','$filename2')");
+
+echo $db->error;
     }
     //$db->query("INSERT INTO ilyess VALUES (NULL,'$name','$phone_number')");
 
     /*$result= $db->query('SELECT * FROM contact_ilyess');
-    echo '<ul>';
+    echo '<ul>';$filename1=time().".jpg";
     while ($row = $result->fetch_array()) {
 
     echo '<li><a class="btn btn-default" href="printing.php?id='.$row['id'].'" >'.$row['name'].'</a></li></br>';

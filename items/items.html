@@ -361,13 +361,13 @@
                   <header class="align-center animated bounce">
                       <h3>Formulaire Article</h3>
 
-									<form method="post" action="#">
+									<form method="post" action="deposer_items.php" enctype="multipart/form-data">
 										<div class="row uniform">
 											<div class="12u$">
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Titre de l'article" />
+												<input type="text" name="titre" value="" placeholder="Titre de l'article" />
                         <br><br>
                         <div class="select-wrapper">
-                                <select name="demo-category" id="demo-category">
+                                <select name="Régions">
                                   <<option value="">-----------------------------------------------------------------------------------------------------------Régions-----------------------------------------------------------------------------------------------------------</option>
                                     <option value="1">Ariana</option>
                                     <option value="2">Béja</option>
@@ -426,7 +426,7 @@
 														<option value="1">Human Resources</option>
 													</select>
 											-->
-                        <input type="text" name="demo-name" id="demo-name" value="" placeholder="Qte" />
+                        <input type="text" name="qte" placeholder="Qte" />
 
                     </div>
                               </th>
@@ -448,7 +448,7 @@
                   <option value="1">Human Resources</option>
                 </select>
             -->
-              <input type="text" name="demo-name" id="demo-name" value="" placeholder="TND" />
+              <input type="text" name="prix" placeholder="TND" />
 
           </div>
                             </th>
@@ -487,15 +487,15 @@
 
         -->							<!-- Break -->
 											<div class="12u$">
-												<textarea name="demo-message" id="demo-message" placeholder="Description de l'article" rows="6"></textarea>
+												<textarea name="desc" placeholder="Description de l'article" rows="6"></textarea>
 											</div>
 											<!-- Break -->
                       <br>
                       <br>
 											<div class="12u$">
 												<ul class="actions">
-													<li><input type="submit" value="enregister votre article" /></li>
-													<li><input type="reset" value="&nbsp;&nbsp;&nbsp;&nbsp;videz les champs &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/></li>
+													<li><input name="submit" type="submit" value="enregister votre article" /></li>
+													<li><input name="reset" type="reset" value="&nbsp;&nbsp;&nbsp;&nbsp;videz les champs &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/></li>
 												</ul>
 											</div>
 										</div>
