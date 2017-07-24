@@ -9,12 +9,11 @@
   <body>
 
     <?php
-    $a = $_POST['cherche'];
-    $b = $_POST['category'];
-    $c = $_POST['region'];
-    echo $b;
+    $search = $_POST['cherche'];
+    $category = $_POST['category'];
+    $region = $_POST['region'];
     $db = mysqli_connect('35.160.127.179','butterflies','butter2017','butterflies');
-    $result = $db->query("SELECT * FROM annonces where categorie='$b'and region='$c'");
+    $result = $db->query("SELECT * FROM product where categorie='$category'and region='$region'");
     while ($row = $result->fetch_array())
     {
     ?>

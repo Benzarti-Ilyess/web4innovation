@@ -28,7 +28,7 @@
 		</header>
     <br><br><br><br><br><center><h2>Votre Boutique</h2></center><br><br><br><br>
     <?php
-      $query = "SELECT * FROM annonces WHERE prix = 500";
+      $query = "SELECT * FROM product WHERE email = 'aa'";
       $result = mysqli_query($db, $query);
       while ($row = $result->fetch_array())
       {
