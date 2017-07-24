@@ -25,7 +25,7 @@
 		<!-- Header -->
 			<header id="header">
 				<div class="inner">
-					<a href="index.html" class="logo"><strong>Bienvenue,<?= $_SESSION['username']?></strong> </a>
+					<a href="./compte.php" class="logo"><strong>Bienvenue,<?= $_SESSION['username']?></strong> </a>
 					<nav id="nav">
 						<a href="./../index.php">Home</a>
 						<a href="generic.html">Generic</a>
