@@ -21,7 +21,7 @@
 
     <div class="row">
       <div class="col-md-4">
-       <img class="jj" src="./../deposer_annonce/<?php echo $row['image'];?>" width="180px" height="130px">
+       <img class="jj" src="../items/<?php echo $row['image'];?>" width="180px" height="130px">
       </div>
       <div class="col-md-5 ">
       <h4>  <?php echo $row['titre']; ?> </h4><br>

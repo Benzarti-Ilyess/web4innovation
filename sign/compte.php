@@ -6,7 +6,7 @@
     include('../config.php');
   }
   $client=$_SESSION['email'];
-  
+
  ?>
 <html>
 	<head>
@@ -40,7 +40,7 @@
       <div class="col-md-6" style="background:#f5f5f5;">
         <div class="row">
           <div class="col-md-6">
-            <img src="./../deposer_annonce/<?php echo $row['image'];?>" width="180px" height="130px">
+            <img src="./../items/<?php echo $row['image'];?>" width="180px" height="130px">
           </div>
           <div class="col-md-6">
             <h4>  <?php echo $row['titre']; ?> </h4><br>

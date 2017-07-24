@@ -20,8 +20,7 @@
     		<a href="./sign-out.php">Déconnecter</a>
 			  <nav id="nav">
 					<a href="./index.html">Home</a>
-					<a href="generic.html">Generic</a>
-					<a href="elements.html">Elements</a>
+					<a href="generic.html">Se deconnecter</a>
 				</nav>
 				<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 			</div>
@@ -49,7 +48,7 @@
 					</div>
 				</div>
 				<footer>
-					<a href="#" class="button">Accéder à ma Boutique</a>
+					<a href="../items/items.html" class="button">Je veux vendre</a>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					<a href="./../achat/achat.php" class="button">Je veux acheter</a>
 					<br><br>
