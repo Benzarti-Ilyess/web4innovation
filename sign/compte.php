@@ -2,38 +2,22 @@
   session_start();
   if (!isset($_SESSION['signed-in'])){
     header('location: sign-in.php');
+  }else{
+    include('../config.php');
   }
  ?>
 <html>
 	<head>
-		<title>Elements - Projection by TEMPLATED</title>
+		<title>Carthage Bay | My Shop</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="./../assets/css/main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
 	</head>
 	<body class="subpage">
-<<<<<<< HEAD
-
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="./compte.php" class="logo"><strong>Bienvenue,<?= $_SESSION['username']?></strong> </a>
-					<nav id="nav">
-						<a href="./../index.php">Home</a>
-						<a href="generic.html">Generic</a>
-						<a href="elements.html">Elements</a>
-					</nav>
-					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
-				</div>
-			</header>
-
-      <br><br><br><br><br><center><h2>Your Shop</h2></center><br><br><br><br>
-      <?php
-=======
 		<header id="header">
 			<div class="inner">
-				<a href="index.html" class="logo"><strong>Bienvenue,<?= $_SESSION['username']?></strong> </a>
+				<a href="./compte.php" class="logo"><strong>Bienvenue, <?= $_SESSION['name']?></strong> </a>
 				<nav id="nav">
 					<a href="./../index.php">Home</a>
 					<a href="generic.html">Generic</a>
@@ -44,9 +28,8 @@
 		</header>
     <br><br><br><br><br><center><h2>Your Shop</h2></center><br><br><br><br>
     <?php
->>>>>>> 292fad7446123035af4e3246368bb078542e8571
-      $db = mysqli_connect('35.160.127.179','butterflies','butter2017','butterflies');
-      $result = $db->query("SELECT * FROM annonces where prix=500");
+      $query = "SELECT * FROM annonces WHERE prix = 500";
+      $result = mysqli_query($db, $query);
       while ($row = $result->fetch_array())
       {
     ?>

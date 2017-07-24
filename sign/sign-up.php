@@ -2,19 +2,22 @@
 	include('../config.php');
 
   if (isset($_POST['submit'])) {
-    $username = $_POST['name'];
+    $name = $_POST['name'];
+		$surname = $_POST['surname'];
 		$email = $_POST['email'];
+		$phone = $_POST['phone'];
     $password = $_POST['password'];
 		$sex = $_POST['sex'];
 
-    $query = "INSERT INTO fakher_users VALUES ('{$username}', '{$password}', NULL)";
+    $query = "INSERT INTO users VALUES ('{$name}', '{$surname}', '{$email}', '{$password}', '{$sex}', '{$phone}')";
     $result = mysqli_query($db, $query);
     if($result){
       session_start();
       echo '<p>Sign up successful</p><br><br>';
       $_SESSION['signed-in'] = true;
-      $_SESSION['username'] = $username;
-      header('location: ../index.php');
+      $_SESSION['email'] = $email;
+			$_SESSION['name'] = $name;
+      header('location: ./home.php');
 
     }else{
       echo '<p>Sign up unsuccessful<br>'
@@ -66,7 +69,9 @@
 						</div>
 		    	</div>
 		    	<br><br>
-		    	<input type="text" name="email" placeholder="Numero de telephone ou adresse e-mail" />
+		    	<input type="text" name="email" placeholder="Adresse e-mail" />
+		    	<br><br>
+					<input type="text" name="phone" placeholder="Numero de telephone" />
 		    	<br><br>
 		    	<input type="password" name="password" placeholder="Nouveau mot de passe" />
 		    	<br><br>

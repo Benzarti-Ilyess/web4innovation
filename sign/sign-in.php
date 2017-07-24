@@ -3,24 +3,25 @@ include('../config.php');
 
 if(isset($_POST['submit'])){
 
-  $username = $_POST['username'];
+  $email = $_POST['email'];
   $password = $_POST['password'];
 
-  $query = "SELECT * FROM fakher_users WHERE user = '$username' AND password = '$password'";
+  $query = "SELECT * FROM users WHERE email = '$email' AND pass = '$password'";
   $result = mysqli_query($db, $query);
   $row = $result->fetch_array();
 
   if (isset($row)){
     session_start();
     $_SESSION['signed-in'] = true;
-    $_SESSION['username'] = $_POST['username'];
+    $_SESSION['email'] = $row['email'];
+    $_SESSION['name'] = $row['name'];
     header('location: home.php');
   }else{
     header('location: sign-in.php?error');
   }
 }
-
 ?>
+
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -47,13 +48,13 @@ if(isset($_POST['submit'])){
       <div class="col-md-4"></div>
       <div class="col-md-4">
         <form method="post" action="sign-in.php">
-          <input type="text" placeholder="username" name="username"/>
+          <input type="text" placeholder="email" name="email"/>
           <br>
           <input type="password" placeholder="password" name="password" />
           <br>
           <center><button type="submit" name="submit">Sign in</button></center>
           <?php if (isset($_GET['error'])):?>
-          <center><h3 style="color:red;">Invalid username or password</h3></center>
+          <center><h3 style="color:red;">Invalid Email or Password</h3></center>
           <?php endif; ?>
         </form>
         <center><a href="sign-up.php" class="button special" >Sign up</a></center>
