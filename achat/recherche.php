@@ -13,7 +13,12 @@
     $category = $_POST['category'];
     $region = $_POST['region'];
     $db = mysqli_connect('35.160.127.179','butterflies','butter2017','butterflies');
+    if($search==""and$category!=""and $region!=""){
     $result = $db->query("SELECT * FROM product where categorie='$category'and region='$region'");
+    }
+    else{
+        $result = $db->query("SELECT * FROM product");
+    }
     while ($row = $result->fetch_array())
     {
     ?>
