@@ -563,6 +563,7 @@ print 'It took ' + i + ' iterations to sort the deck.';
       <?php endif; ?>
 
     </form>
+  <center>  <button type="button" name="signup">Sign up</button> </center>
   </div>
 </div>
 
