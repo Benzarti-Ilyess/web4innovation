@@ -47,11 +47,10 @@
 					</div>
 				</div>
 				<footer>
-					<a href="#" class="button">Je veux vendre</a>
+					<a href="choix.php" class="button">Je veux vendre</a>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					<a href="./achat/achat.php" class="button">Je veux acheter</a>
-					<br><br>
-					<a href="./sign/sign-in.php" class="button">Sign in</a>
+
 				</footer>
 			</div>
 		</section>
