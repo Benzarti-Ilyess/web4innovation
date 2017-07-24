@@ -15,11 +15,11 @@
 	<body>
 		<header id="header">
 			<div class="inner">
-			<a href="#" class="logo">  <strong>Site web pour la commerce des artisanats</strong></a>
+			<a href="#" class="logo">  <strong>Bienvenue Dans l'espace des artisants Tunisien(ne)s</strong></a>
 				<nav id="nav">
-					<a href="./index.html">Home</a>
-					<a href="generic.html">Generic</a>
-					<a href="elements.html">Elements</a>
+					<a href="./index.php">Acceuil</a>
+					<a href="generic.php">Generic</a>
+					<a href="elements.php">Elements</a>
 				</nav>
 				<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 			</div>
@@ -27,23 +27,23 @@
     <section id="banner">
 			<div class="inner">
 				<header>
-					<h1>Welcome to Tunisia</h1>
+					<h1>Bienvenue En Tunisie</h1>
 				</header>
 				<div class="flex ">
 					<div>
 						<img class="animation animated bounce" src="./images/jebba.jpg" width="150px" height="150px" />
-						<h3>dbach</h3>
-						<p>baaaarcha dbach</p>
+						<h3>Vêtements</h3>
+						<p>Découvrez les habits traditionels des régions Tunisiennes</p>
 					</div>
 					<div>
 						<img class="animation animated bounce" src="./images/makla.jpg" width="150px" height="150px" />
-						<h3>makla </h3>
-						<p>ka3k war9a fi 5ater si fakher</p>
+						<h3>Cuisine</h3>
+						<p>Feuilletez les salés et les sucrés traditionels de la Tunisie.</p>
 					</div>
 					<div>
 						<img class="animation animated bounce" src="./images/decor.jpg" width="150px" height="150px" />
-						<h3>decor</h3>
-						<p>zayan betek frere</p>
+						<h3>Décor</h3>
+						<p>Vases, tableaux, couverture traditionnelle...</p>
 					</div>
 				</div>
 				<footer>
