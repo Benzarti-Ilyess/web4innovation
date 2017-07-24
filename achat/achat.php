@@ -528,19 +528,38 @@ print 'It took ' + i + ' iterations to sort the deck.';
     <div class="col-md-3">
       <select name="category">
       <option value="0">- Category -</option>
-      <option value="Cuisine">Cuisine</option>
-      <option value="Télephones">Télephones</option>
-      <option value="3">Ordinateus</option>
-      <option value="4">Patisserie</option>
+      <option value="dbach">dbach</option>
+      <option value="mekla">mekla</option>
+      <option value="decor">decor</option>
       </select>
     </div>
     <div class="col-md-3">
       <select name="region">
-      <option value="0">- region -</option>
-      <option value="Sousse">Sousse</option>
-      <option value="Monastir">Monastir</option>
-      <option value="3">Grand Tunis</option>
-      <option value="4">Gabes</option>
+      <option value="">- region -</option>
+      <option value="1">Ariana</option>
+      <option value="2">Beja</option>
+      <option value="3">Ben Arous</option>
+      <option value="4">Bizerte</option>
+			<option value="5">Gabés</option>
+			<option value="6">Gafsa</option>
+			<option value="7">Jendouba</option>
+			<option value="8">Kairouan</option>
+			<option value="9">Kasserine</option>
+			<option value="10">Kebili</option>
+			<option value="11">La Manouba</option>
+			<option value="12">Le Kef</option>
+			<option value="13">Mahdia</option>
+			<option value="14">Medenine</option>
+			<option value="15">Monastir</option>
+			<option value="16">Nabeul</option>
+			<option value="17">Sfax</option>
+			<option value="18">Sidi Bouzid</option>
+			<option value="19">Siliana</option>
+			<option value="20">Sousse</option>
+			<option value="21">Tataouine</option>
+			<option value="22">Touzeur</option>
+			<option value="23">Tunis</option>
+			<option value="24">Zaghouen</option>
       </select>
     </div>
     <div class="col-md-2">
