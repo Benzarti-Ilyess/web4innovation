@@ -14,50 +14,6 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
 	</head>
 	<body>
-<<<<<<< HEAD
-
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-			<a href="compte.php" class="logo">  <strong>Bienvenue, <?= $_SESSION['username']?></strong></a>
-					<a href="./signout.php">Sign-out</a>
-					<nav id="nav">
-						<a href="./index.html">Home</a>
-						<a href="generic.html">Generic</a>
-						<a href="elements.html">Elements</a>
-					</nav>
-					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
-				</div>
-			</header>
-
-		<!-- Banner -->
-			<section id="banner">
-				<div class="inner">
-					<header>
-						<h1>Welcome to Tunisia</h1>
-					</header>
-
-					<div class="flex ">
-
-						<div>
-							<img class="animation animated bounce" src="./../images/jebba.jpg" width="150px" height="150px" />
-							<h3>dbach</h3>
-							<p>baaaarcha dbach</p>
-						</div>
-
-						<div>
-							<img class="animation animated bounce" src="./../images/makla.jpg" width="150px" height="150px" />
-							<h3>makla </h3>
-							<p>ka3k war9a fi 5ater si fakher</p>
-						</div>
-
-						<div>
-							<img class="animation animated bounce" src="./../images/decor.jpg" width="150px" height="150px" />
-							<h3>decor</h3>
-							<p>zayan betek frere</p>
-						</div>
-
-=======
 		<header id="header">
 			<div class="inner">
     		<a href="#" class="logo">  <strong>Bienvenue,<?= $_SESSION['username']?></strong></a>
@@ -80,7 +36,6 @@
 						<img class="animation animated bounce" src="./../images/jebba.jpg" width="150px" height="150px" />
 						<h3>dbach</h3>
 						<p>baaaarcha dbach</p>
->>>>>>> 63ff2b4474550790c0dd4807cfd3ea370acb8f8d
 					</div>
 					<div>
 						<img class="animation animated bounce" src="./../images/makla.jpg" width="150px" height="150px" />
