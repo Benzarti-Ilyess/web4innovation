@@ -21,11 +21,10 @@ if(isset($_POST['submit'])){
   }
 }
 ?>
-
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Carthage Bay | Sign In</title>
+		<title>Carthage Bay | Connection</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="./../assets/css/main.css" />
@@ -34,7 +33,7 @@ if(isset($_POST['submit'])){
 	<body class="subpage">
 		<header id="header">
 			<div class="inner">
-				<a href="index.html" class="logo"><strong>Projection</strong> by TEMPLATED</a>
+				<a href="index.html" class="logo"><strong>Carthage Bay</strong></a>
 				<nav id="nav">
 					<a href="./../index.php">Home</a>
 					<a href="generic.html">Generic</a>
@@ -48,16 +47,19 @@ if(isset($_POST['submit'])){
       <div class="col-md-4"></div>
       <div class="col-md-4">
         <form method="post" action="sign-in.php">
-          <input type="text" placeholder="email" name="email"/>
+          <input type="text" placeholder="Email" name="email"/>
           <br>
-          <input type="password" placeholder="password" name="password" />
+          <input type="password" placeholder="Mot de passe" name="password" />
           <br>
-          <center><button type="submit" name="submit">Sign in</button></center>
+          <center><button type="submit" name="submit">Se connceter</button></center>
           <?php if (isset($_GET['error'])):?>
-          <center><h3 style="color:red;">Invalid Email or Password</h3></center>
+          <center><h3 style="color:red;">Email ou Mot de passe incorrect(s).</h3></center>
           <?php endif; ?>
         </form>
-        <center><a href="sign-up.php" class="button special" >Sign up</a></center>
+        <center>
+          <p>Voulez vous créer votre boutique en ligne?</p>
+          <a href="sign-up.php" class="button special" >Créer ma Boutique</a>
+        </center>
       </div>
     </div>
 	</body>

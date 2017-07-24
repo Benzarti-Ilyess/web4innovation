@@ -33,17 +33,17 @@
 					<div>
 						<img class="animation animated bounce" src="./images/jebba.jpg" width="150px" height="150px" />
 						<h3>Vêtements</h3>
-						<p>Découvrez les habits traditionels des régions Tunisiennes</p>
+						<p class="description">Découvrez les habits traditionels des régions Tunisiennes</p>
 					</div>
 					<div>
 						<img class="animation animated bounce" src="./images/makla.jpg" width="150px" height="150px" />
 						<h3>Cuisine</h3>
-						<p>Feuilletez les salés et les sucrés traditionels de la Tunisie.</p>
+						<p class="description">Feuilletez les salés et les sucrés traditionels de la Tunisie.</p>
 					</div>
 					<div>
 						<img class="animation animated bounce" src="./images/decor.jpg" width="150px" height="150px" />
 						<h3>Décor</h3>
-						<p>Vases, tableaux, couverture traditionnelle...</p>
+						<p class="description">Vases, tableaux, couverture traditionnelle...</p>
 					</div>
 				</div>
 				<footer>

@@ -8,7 +8,7 @@
  ?>
 <html>
 	<head>
-		<title>Carthage Bay | My Shop</title>
+		<title>Carthage Bay | Ma Boutique</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="./../assets/css/main.css" />
@@ -26,7 +26,7 @@
 				<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 			</div>
 		</header>
-    <br><br><br><br><br><center><h2>Your Shop</h2></center><br><br><br><br>
+    <br><br><br><br><br><center><h2>Votre Boutique</h2></center><br><br><br><br>
     <?php
       $query = "SELECT * FROM annonces WHERE prix = 500";
       $result = mysqli_query($db, $query);
