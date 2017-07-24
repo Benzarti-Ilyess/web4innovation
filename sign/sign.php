@@ -23,14 +23,6 @@ if(isset($_POST['submit'])){
 
 }
 ?>
-
-
-
-
-
-
-
-
 <!DOCTYPE HTML>
 <!--
 	Projection by TEMPLATED
