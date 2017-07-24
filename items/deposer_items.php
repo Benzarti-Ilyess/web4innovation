@@ -1,4 +1,10 @@
 <?php
+session_start();
+ if (!isset($_SESSION['signed-in'])){
+   header('location: sign-in.php');
+ }
+
+ $email=$_SESSION['email'];
 
 if(isset($_POST['submit']))
   {
@@ -21,7 +27,7 @@ $filename2=time()."1.jpg";
     //$result = mysqli_query($db,$sql);
     //foreach ($result as $personne) {
     //  $personne->name;  //}
-    mysqli_query($db,"INSERT INTO product VALUES (NULL,'aa','$titre','$reg','monastir','$quantite','$prix','$filename1','$desc','$filename2')");
+    mysqli_query($db,"INSERT INTO product VALUES (NULL,$email,'$titre','$reg','monastir','$quantite','$prix','$filename1','$desc','$filename2')");
 
 echo $db->error;
     }
