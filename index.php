@@ -62,7 +62,7 @@
 						<header>
 							<h3>Qui sommes nous?</h3>
 						</header>
-						<p class="description" style="margin-left: 200px;">Nous sommes des élèves ingénieurs de l'école nationale des sciences de l'informatique l'ENSI. Nous intéréssons dans l'entreprenariat social pour mettre la TIC au service de notre Tunisie.</p>
+						<p class="description" style="margin-left: 200px;">Nous sommes des élèves ingénieurs de l'école nationale des sciences de l'informatique (ENSI). Nous nous intéressons dans l'entreprenariat sociale pour mettre la TIC au service de notre Tunisie.</p>
 						</article>
 					<article>
 						<div class="image round">
@@ -71,7 +71,7 @@
 						<header>
 							<h3>Notre mission</h3>
 						</header>
-						<p class="description" style="margin-left: 200px;">Nous voullons donner la possibilités aux artisants tunisiens de commercialiser leurs produits avec le minimum de coûts et toute en utilisant une inteerface User-Friendly aux non-informaticiens.</p>
+						<p class="description" style="margin-left: 200px;">Nous voulons donner la possibilité aux artisants tunisiens de commercialiser leurs produits avec le minimum de coûts et toute en utilisant une inteerface User-Friendly aux non-informaticiens.</p>
 					</article>
           <footer>
             <p style="margin-left: 553px;">
