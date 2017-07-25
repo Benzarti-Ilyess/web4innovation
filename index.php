@@ -74,12 +74,11 @@
 						<p class="description" style="margin-left: 200px;">Nous voullons donner la possibilités aux artisants tunisiens de commercialiser leurs produits avec le minimum de coûts et toute en utilisant une inteerface User-Friendly aux non-informaticiens.</p>
 					</article>
           <footer>
-            <p style="margin-left: 1100px;">
+            <p style="margin-left: 553px;">
                 Équipe:<br>
                 Ali Nabi<br>
                 Ilyess benzarti<br>
                 Fakher Mokadem<br>
-              </ul>
             </p>
           </footer>
 				</div>
