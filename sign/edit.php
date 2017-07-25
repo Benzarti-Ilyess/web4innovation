@@ -37,12 +37,12 @@ if(isset($_POST['submit'])){
  				<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
  			</div>
  		</header>
-     <br><br><br><br><br><center><h2>Votre Boutique</h2></center><br><br><br><br>
      <?php
        $query = "SELECT * FROM product WHERE id = '$id'";
        $result = mysqli_query($db, $query);
        $row = $result->fetch_array()
      ?>
+      <br><br><br><br><br><center><h2><?php echo $row['titre']; ?> </h2></center><br><br><br><br>
      <div class="row" >
        <div class="col-md-3"></div>
        <div class="col-md-6" style="background:#f5f5f5;">
