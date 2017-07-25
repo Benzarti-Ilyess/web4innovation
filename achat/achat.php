@@ -526,8 +526,8 @@ print 'It took ' + i + ' iterations to sort the deck.';
     <div class="col-md-3">
       <select name="category">
       <option value="">- Category -</option>
-      <option value="dbach">dbach</option>
-      <option value="mekla">mekla</option>
+      <option value="vetements">vetements</option>
+      <option value="food">food	</option>
       <option value="decor">decor</option>
       </select>
     </div>

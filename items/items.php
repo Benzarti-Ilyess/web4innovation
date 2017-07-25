@@ -1,3 +1,12 @@
+<?php
+include('../config.php');
+  session_start();
+  if (!isset($_SESSION['signed-in'])){
+    header('location: ../sign/sign-in.php');
+}
+ ?>
+
+
 <!DOCTYPE HTML>
 <!--
 	Projection by TEMPLATED
@@ -21,11 +30,10 @@
 		<!-- Header -->
 			<header id="header">
 				<div class="inner">
-					<a href="index.html" class="logo"><strong>Projection</strong> by TEMPLATED</a>
+					<a href="../sign/compte.php" class="logo"><strong>Bienvenue,  <?= $_SESSION['name']?></strong></a>
 					<nav id="nav">
-						<a href="index.html">Home</a>
-						<a href="generic.html">Generic</a>
-						<a href="elements.html">Elements</a>
+						<a href="../sign/home.php">Home</a>
+						<a href="../sign/sign-out.php">Se déconncter</a>
 					</nav>
 					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 				</div>

@@ -61,7 +61,7 @@ include('../config.php');
         </div>
       </div>
     </div>
-    <hr>
+    <br>
     <?php
       }
     ?>
