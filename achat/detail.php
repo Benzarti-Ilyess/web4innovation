@@ -10,6 +10,9 @@ $rowe=$res->fetch_array();
  ?>
 
 
+
+
+
 <html>
 	<head>
 		<title>Elements - Projection by TEMPLATED</title>
@@ -25,6 +28,9 @@ $rowe=$res->fetch_array();
             border-radius:50px;
             overflow:hidden;
             }
+        h2{
+          margin-left: 120px;
+        }
     </style>
 	</head>
 	<body class="subpage">
@@ -67,6 +73,56 @@ $rowe=$res->fetch_array();
           </div>
           <br><br>
         </div>
+      </div>
+      <br><br><br><br>
+      <h2>Les commentaires:</h2>
+          <?php
+          $resultcommentaire= $db->query('SELECT * FROM commentaire where id='.$id);
+          while ($row = $resultcommentaire->fetch_array())
+          {
+          ?>
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-6" style="background:#BEF574;">
+              <b>Nom:</b> <?php echo $row['name'];?>
+            <br>
+            <b>Commentaire:</b> <?php echo $row['commentaire'];?>
+            </div>
+          </div>
+          <br>
+          <?php
+          }
+          ?>
+      <br>
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <form action="detail1.php" method="post">
+            <input name="id_produit" type="hidden" value="<?php echo $id;?>" />
+          <h3>Ajouter un commentaire:</h3>
+          <div class="row">
+            <div class="col-md-7">
+            <div class="row">
+              <div class="col-md-4">
+                <input type="text" name="name" placeholder="Votre nom complet">
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-4">
+                <input type="text" name="email" placeholder="Votre e-mail">
+              </div>
+            </div>
+            <br>
+            <textarea name="commentaire" rows="6" cols="60" placeholder="Mettre votre commentaire ici .."></textarea>
+            </div>
+            <div class="col-md-1">
+              <button type="submit" name="submit">Ajouter votre commentaire</button>
+            </div>
+          </div>
+          </form>
+        </div>
+
       </div>
     </body>
   </html>
