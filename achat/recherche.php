@@ -13,6 +13,7 @@
       <div class="inner">
        <strong class="logo">Site web pour la commerce des artisanats</strong>
         <nav id="nav">
+          <a href="achat.php">Retour à la page de recherche</a>
           <a href="./../index.php">Home</a>
         </nav>
         <a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
@@ -25,28 +26,28 @@
     $region = $_POST['region'];
     $db = mysqli_connect('35.160.127.179','butterflies','butter2017','butterflies');
     if($search!=""and$category!=""and $region!=""){
-      $result = $db->query("SELECT * FROM product where  titre='$search' and categorie='$category'and region='$region'");
+      $result = $db->query("SELECT * FROM product where  titre='$search' and categorie='$category'and region='$region'ORDER BY vu DESC");
     }
     else if($search!=""and$category==""and $region!=""){
-      $result = $db->query("SELECT * FROM product where titre='$search'and region='$region'");
+      $result = $db->query("SELECT * FROM product where titre='$search'and region='$region'ORDER BY vu DESC");
     }
     else if($search!=""and$category!=""and $region==""){
-      $result = $db->query("SELECT * FROM product where categorie='$category'and titre='$search'");
+      $result = $db->query("SELECT * FROM product where categorie='$category'and titre='$search'ORDER BY vu DESC");
     }
     else if($search==""and$category!=""and $region!=""){
-      $result = $db->query("SELECT * FROM product where categorie='$category'and region='$region'");
+      $result = $db->query("SELECT * FROM product where categorie='$category'and region='$region'ORDER BY vu DESC");
     }
     else if ($search==""and$category!=""and $region==""){
-      $result = $db->query("SELECT * FROM product where categorie='$category'");
+      $result = $db->query("SELECT * FROM product where categorie='$category'ORDER BY vu DESC");
     }
     else if ($search!=""and$category==""and $region==""){
-      $result = $db->query("SELECT * FROM product where titre='$search'");
+      $result = $db->query("SELECT * FROM product where titre LIKE'%$search%'ORDER BY vu DESC");
     }
     else if ($search==""and$category==""and $region!=""){
-      $result = $db->query("SELECT * FROM product where region='$region'");
+      $result = $db->query("SELECT * FROM product where region='$region'ORDER BY vu DESC");
     }
     else{
-        $result = $db->query("SELECT * FROM product");
+        $result = $db->query("SELECT * FROM product ORDER BY vu DESC");
     }
     ?><br><br><br><?php
     while ($row = $result->fetch_array())
@@ -74,6 +75,11 @@
           </div>
           <div class="col-md-4">
             <br><br>Nombre d'unités restantes: <?=$row['quantite'];?>
+            <br><br>
+            <center>
+              <img src="oeil.jpg">
+              <?=$row['vu'];?>
+            </center>
           </div>
         </div>
       </div>
