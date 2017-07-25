@@ -2,6 +2,7 @@
 $db = mysqli_connect('35.160.127.179','butterflies','butter2017','butterflies');
 $id = $_GET['id'];
 $result = $db->query('SELECT * FROM product where id='.$id);
+$db->query('UPDATE product SET vu=vu+1 where id='.$id);
 $row=$result->fetch_array();
 $x=$row['email'];
 /*.$row['email']*/
@@ -15,14 +16,14 @@ $rowe=$res->fetch_array();
 
 <html>
 	<head>
-		<title>Elements - Projection by TEMPLATED</title>
+		<title>Carthage Bay | detail</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
     <link rel="stylesheet" href="./../assets/css/main.css" />
     <link rel="stylesheet" href="aa.css">
     <style type="text/css">
-        img{
+        .imge{
             height: 200px;
             width: 280px;
             border-radius:50px;
@@ -40,6 +41,7 @@ $rowe=$res->fetch_array();
 				<div class="inner">
 				 <strong class="logo">Site web pour la commerce des artisanats</strong>
 					<nav id="nav">
+            <a href="achat.php">Retour à la page de recherche</a>
 						<a href="./../index.php">Home</a>
 					</nav>
 					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
@@ -50,15 +52,16 @@ $rowe=$res->fetch_array();
         <div class="col-md-2"></div>
         <div class="col-md-8" style="background:#f5f5f5;">
           <div class="row">
+            <br>
             <div class="col-md-1"></div>
             <div class="col-md-4">
                 <br>
-                <img src="../items/<?php echo $row['image'];?>">
+                <img class="imge"src="../items/<?php echo $row['image'];?>">
                 <br><br>,
-                <img src="../items/<?php echo $row['image2'];?>">
+                <img class="imge"src="../items/<?php echo $row['image2'];?>">
                 <br>
             </div>
-            <div class="col-md-7">
+            <div class="col-md-5">
               <br>
               <h3><b>Prix: </b><?php echo $row['prix'];?> DT</h3>
               <h3><b>Quantite Restante: </b><?php echo $row['quantite'];?> </h3>
@@ -69,6 +72,12 @@ $rowe=$res->fetch_array();
               mail:&nbsp;<?php echo $rowe['email'];?>
               <br>
               Numero de telephone:&nbsp;<?php echo $rowe['tel'];?>
+            </div>
+            <div class="col-md-1">
+              <br>
+              <center>
+              <i class="fa fa-eye fa-3x" aria-hidden="true"></i><br>
+              <h3><?php echo $row['vu'];?></center></h3>
             </div>
           </div>
           <br><br>
