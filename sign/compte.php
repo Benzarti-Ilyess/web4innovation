@@ -7,12 +7,14 @@ include('../config.php');
   $client=$_SESSION['email'];
  ?>
 
+
  <?php
  if(isset($_POST['submit'])){
+   if(isset($_GET['id'])){
    $id = $_GET['id'];
    $query = "DELETE FROM product WHERE id =$id ";
    $result = mysqli_query($db, $query);
-}
+}}
   ?>
 <html>
 	<head>
@@ -45,18 +47,22 @@ include('../config.php');
       <div class="col-md-6" style="background:#f5f5f5;">
         <div class="row">
           <div class="col-md-4">
+            <br>
             <img src="./../items/<?php echo $row['image'];?>" width="180px" height="130px">
+            <br>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-3">
             <h4>  <?php echo $row['titre']; ?> </h4><br>
             <h5>  <?php echo $row['prix']; ?> DT<br></h5>
             <?php echo $row['region']; ?>
           </div>
-          <div class="col-md-2">
+          <div class="col-md-5">
             <br><br>
             <form action="compte.php?id=<?=$row['id']?>" method="post">
               <button name="submit" type="submit">effacer</button>
             </form>
+            nombre des unités restantes: <?=$row['quantite']?>
+            <a href="edit.php?id=<?= $row['id']?>">editer Nombre</a>
           </div>
         </div>
       </div>
