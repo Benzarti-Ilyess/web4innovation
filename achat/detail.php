@@ -5,7 +5,7 @@ $result = $db->query('SELECT * FROM product where id='.$id);
 $row=$result->fetch_array();
 $x=$row['email'];
 /*.$row['email']*/
-$res = $db->query('SELECT * FROM users where email="manali1@live.fr"');
+$res = $db->query("SELECT * FROM users where email='".$row['email'] . "'");
 $rowe=$res->fetch_array();
  ?>
 
