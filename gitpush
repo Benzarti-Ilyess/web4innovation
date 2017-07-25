@@ -1,8 +1,16 @@
 #!/bin/bash
 
-msg=$1;
+echo "het msg el commit";
+read msg;
 
 git add .;
+
+echo "commiting...";
 git commit -m "${msg}";
+
+echo "pulling...";
+git pull ;
+
+echo "pushing...";
 git push;
-echo frifich > &0;
+
