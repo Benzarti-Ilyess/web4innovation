@@ -19,7 +19,6 @@ $filename1=time().".jpg";
     $quantite=$_POST["qte"];
 $filename2=time()."1.jpg";
 $categorie=$_POST['categorie'];
-var_dump($categorie);
    move_uploaded_file($tmp_name1,$filename1);
     move_uploaded_file($tmp_name2,$filename2);
     $db = mysqli_connect('35.160.127.179','butterflies','butter2017','butterflies');
@@ -57,4 +56,6 @@ echo $db->error;
   else{
     die("mwaher frere");
   }
+
+  header('location: retour_principale.php');
  ?>
