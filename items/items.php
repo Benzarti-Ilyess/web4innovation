@@ -31,7 +31,8 @@ include('../config.php');
 			<header id="header">
 				<div class="inner">
 					<a href="../sign/compte.php" class="logo"><strong>Bienvenue,  <?= $_SESSION['name']?></strong></a>
-					<nav id="nav">
+
+          <nav id="nav">
 						<a href="../sign/home.php">Home</a>
 						<a href="../sign/sign-out.php">Se déconncter</a>
 					</nav>
@@ -43,7 +44,7 @@ include('../config.php');
 			<section id="main" class="wrapper">
 				<div class="inner">
 					<header class="align-center">
-						<h2 class="animated bounce">deposer votre article ici </h2>
+            <h2 class="animated bounce">deposer votre article ici </h2>
 
 					</header>
 

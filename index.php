@@ -26,7 +26,7 @@
     <section id="banner">
 			<div class="inner">
 				<header>
-					<h1>Bienvenue En Tunisie</h1>
+					<h1>Bienvenue en Tunisie</h1>
 				</header>
 				<div class="flex ">
 					<div>
