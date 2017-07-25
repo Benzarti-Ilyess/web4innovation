@@ -16,7 +16,7 @@ $rowe=$res->fetch_array();
 
 <html>
 	<head>
-		<title>Elements - Projection by TEMPLATED</title>
+		<title>Carthage Bay | detail</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
@@ -75,8 +75,9 @@ $rowe=$res->fetch_array();
             </div>
             <div class="col-md-1">
               <br>
-              <img src="oeil.jpg">
-              <h3><center><?php echo $row['vu'];?></center></h3>
+              <center>
+              <i class="fa fa-eye fa-3x" aria-hidden="true"></i><br>
+              <h3><?php echo $row['vu'];?></center></h3>
             </div>
           </div>
           <br><br>
