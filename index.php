@@ -60,25 +60,29 @@
 							<img src="images/pic01.jpg" alt="Pic 01" />
 						</div>
 						<header>
-							<h3>Lorem ipsum<br /> dolor amet nullam</h3>
+							<h3>Qui sommes nous?</h3>
 						</header>
-						<p>Morbi in sem quis dui placerat ornare. Pellentesquenisi<br />euismod in, pharetra a, ultricies in diam sed arcu. Cras<br />consequat  egestas augue vulputate.</p>
-						<footer>
-							<a href="#" class="button">Learn More</a>
-						</footer>
-					</article>
+						<p class="description" style="margin-left: 200px;">Nous des élèves ingénieurs de l'école nationale des sciences de l'informatique l'ENSI. Nous intéréssons dans l'entreprenariat social pour mettre la TIC au service de notre Tunisie.</p>
+						</article>
 					<article>
 						<div class="image round">
 							<img src="images/pic02.jpg" alt="Pic 02" />
 						</div>
 						<header>
-							<h3>Sed feugiat<br /> tempus adipicsing</h3>
+							<h3>Notre mission</h3>
 						</header>
-						<p>Pellentesque fermentum dolor. Aliquam quam lectus<br />facilisis auctor, ultrices ut, elementum vulputate, nunc<br /> blandit ellenste egestagus commodo.</p>
-						<footer>
-							<a href="#" class="button">Learn More</a>
-						</footer>
+						<p class="description" style="margin-left: 200px;">Nous voullons donner la possibilités aux artisants tunisiens de commercialiser leurs produits avec le minimum de coûts et toute en utilisant une inteerface User-Friendly aux non-informaticiens.</p>
 					</article>
+          <footer>
+            <p style="margin-left: 1100px;">
+              <ul>
+                <p>Équipe:</p>
+                <li>Ali Nabi</li>
+                <li>Ilyess benzarti</li>
+                <li>Fakher Mokadem</li>
+              </ul>
+            </p>
+          </footer>
 				</div>
 			</div>
 		</section>
