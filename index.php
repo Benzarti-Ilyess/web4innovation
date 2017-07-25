@@ -62,7 +62,7 @@
 						<header>
 							<h3>Qui sommes nous?</h3>
 						</header>
-						<p class="description" style="margin-left: 200px;">Nous des élèves ingénieurs de l'école nationale des sciences de l'informatique l'ENSI. Nous intéréssons dans l'entreprenariat social pour mettre la TIC au service de notre Tunisie.</p>
+						<p class="description" style="margin-left: 200px;">Nous sommes des élèves ingénieurs de l'école nationale des sciences de l'informatique l'ENSI. Nous intéréssons dans l'entreprenariat social pour mettre la TIC au service de notre Tunisie.</p>
 						</article>
 					<article>
 						<div class="image round">
@@ -75,11 +75,10 @@
 					</article>
           <footer>
             <p style="margin-left: 1100px;">
-              <ul>
-                <p>Équipe:</p>
-                <li>Ali Nabi</li>
-                <li>Ilyess benzarti</li>
-                <li>Fakher Mokadem</li>
+                Équipe:<br>
+                Ali Nabi<br>
+                Ilyess benzarti<br>
+                Fakher Mokadem<br>
               </ul>
             </p>
           </footer>
