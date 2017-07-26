@@ -28,34 +28,39 @@ $categorie=$_POST['categorie'];
     //$result = mysqli_query($db,$sql);
     //foreach ($result as $personne) {
     //  $personne->name;  //}
-    mysqli_query($db,"INSERT INTO product VALUES (NULL,'$email','$titre','$reg','$categorie','$quantite','$prix','$filename1','$desc','$filename2')");
+    mysqli_query($db,"INSERT INTO product VALUES (NULL,'$email','$titre','$reg','$categorie','$quantite','$prix','$filename1','$desc','$filename2',0)");
 
 echo $db->error;
     }
-    //$db->query("INSERT INTO ilyess VALUES (NULL,'$name','$phone_number')");
 
-    /*$result= $db->query('SELECT * FROM contact_ilyess');
-    echo '<ul>';$filename1=time().".jpg";
-    while ($row = $result->fetch_array()) {
 
-    echo '<li><a class="btn btn-default" href="printing.php?id='.$row['id'].'" >'.$row['name'].'</a></li></br>';
-    }
-    echo '</ul>';
 
-    //foreach ($result as $personne) {
-    //  $personne->name;
-    //}
 
-    }
-    else {
-    echo 'dsle frere';
-    }
-
-    */
   }
   else{
     die("mwaher frere");
   }
 
-  header('location: retour_principale.php');
+  require 'PHPMailer/PHPMailerAutoload.php';
+   $message = file_get_contents('beefree.html');
+
+  $mail = new PHPMailer(); // create a new object
+  $mail->IsSMTP(); // enable SMTP
+  $mail->SMTPDebug = 0; // debugging: 1 = errors and messages, 2 = messages only
+  $mail->SMTPAuth = true; // authentication enabled
+  $mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for Gmail
+  $mail->Host = "smtp.gmail.com";
+  $mail->Port = 465; // or 587
+  $mail->IsHTML(true);
+  $mail->Username = "carthagebay@gmail.com";
+  $mail->Password = "carthagebayaliilyessfakher";
+  $mail->SetFrom("carthagebay@gmail.com");
+  $mail->Subject = "Test";
+  $mail->CharSet="utf-8";
+  $mail->MsgHTML($message);
+  $mail->AddAddress($email);
+  $mail->Send();
+//mail("ilyess94@hotmail.com","My subject",$message);
+echo '<script>setTimeout("location.href = retour_principale.php;",0);</script>';
+header('location: retour_principale.php');
  ?>
