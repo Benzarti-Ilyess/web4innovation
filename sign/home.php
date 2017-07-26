@@ -18,6 +18,7 @@
 			<div class="inner">
     		<a href="compte.php" class="logo">  <strong>Bienvenue, <?= $_SESSION['name']?></strong></a>
 			  <nav id="nav">
+          <a href="compte.php">Accéder à ma boutique</a>
 					<a href="home.php">Home</a>
 					<a href="./sign-out.php">Se deconnecter</a>
 				</nav>
