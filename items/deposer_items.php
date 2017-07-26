@@ -5,6 +5,7 @@ session_start();
  }
 
  $email=$_SESSION['email'];
+ $name=$_SESSION['name'];
 
 if(isset($_POST['submit']))
   {
@@ -43,6 +44,9 @@ echo $db->error;
 
   require 'PHPMailer/PHPMailerAutoload.php';
    $message = file_get_contents('beefree.html');
+   $message = str_replace("{{name}}", $name, $message);
+   $message = str_replace("{{titre}}", $titre, $message);
+
 
   $mail = new PHPMailer(); // create a new object
   $mail->IsSMTP(); // enable SMTP
@@ -55,12 +59,12 @@ echo $db->error;
   $mail->Username = "carthagebay@gmail.com";
   $mail->Password = "carthagebayaliilyessfakher";
   $mail->SetFrom("carthagebay@gmail.com");
-  $mail->Subject = "Test";
+  $mail->Subject = "annonce carthagebay";
   $mail->CharSet="utf-8";
   $mail->MsgHTML($message);
   $mail->AddAddress($email);
   $mail->Send();
 //mail("ilyess94@hotmail.com","My subject",$message);
-echo '<script>setTimeout("location.href = retour_principale.php;",0);</script>';
+//echo '<script>setTimeout("location.href = retour_principale.php;",0);</script>';
 header('location: retour_principale.php');
  ?>
